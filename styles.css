@@ -1,1 +1,111 @@
 /*  your css code here. If applicable */
+
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+html,body{
+    width: 100vw;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+
+.nav{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+.nav-menu{
+    display: flex ;
+    gap: 25px;
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+.hamburger-icon i{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.primary-text{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.secondary-text{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hamburger-menu{
+    position: absolute;
+    top: 100%;
+    right: -220px;
+    padding: 20px;
+    background-color: blue;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 15px;
+    transition: all linear 0.5s;
+}
+
+
+@media screen and (max-width: 628px) {
+.nav-menu{
+    display: none;
+}
+
+.hamburger-icon{
+    display: block;
+}
+
+.show-hamburger-menu{
+    right: -20px;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 350px) {
+.nav{
+    padding: 0 8px;
+}
+
+    .primary-text{
+        font-size: 26px;
+    }
+
+    .hamburger-icon i{
+        font-size: 30px;
+    }
+
+    .nav{
+
+    }
+}
