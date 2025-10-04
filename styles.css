@@ -60,7 +60,7 @@ html,body{
 .hamburger-menu{
     position: absolute;
     top: 100%;
-    right: -220px;
+    right: 0px;
     padding: 20px;
     background-color: blue;
     display: flex;
@@ -68,8 +68,9 @@ html,body{
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    width: 200px;
-    border-radius: 15px;
+    width: 150px;
+    border-bottom-left-radius : 15px;
+     transform: translateX(110%);
     transition: all linear 0.5s;
 }
 
@@ -84,7 +85,7 @@ html,body{
 }
 
 .show-hamburger-menu{
-    right: -20px;
+    transform: translateX(0);
 }
 
 }
