@@ -36,11 +36,11 @@ html,body{
     gap: 25px;
 }
 
-.hamburger-icon{
+.ham{
     display: none;
 }
 
-.hamburger-icon i{
+.ham i{
     font-size: 40px;
     cursor: pointer;
 }
@@ -57,7 +57,7 @@ html,body{
     font-weight: 400;
 }
 
-.hamburger-menu{
+.nav-sub{
     position: absolute;
     top: 100%;
     right: 0px;
@@ -80,7 +80,7 @@ html,body{
     display: none;
 }
 
-.hamburger-icon{
+.ham{
     display: block;
 }
 
@@ -102,11 +102,9 @@ html,body{
         font-size: 26px;
     }
 
-    .hamburger-icon i{
+    .ham i{
         font-size: 30px;
     }
 
-    .nav{
-
-    }
+   
 }
